@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>A Simple Scene</title> 
+        <script src= 
+        "https://aframe.io/releases/1.8.0/aframe.min.js">
+         </script>
+         </head>
+         <body> 
+            <a-scene>
+                 <a-plane 
+                 color="forestgreen"
+                  position="0 0 0" 
+                  rotation="-90 0 0"
+                   width="500" 
+                   height="500" > 
+                </a-plane> 
+                <a-sky 
+                color="lightskyblue" > 
+            </a-sky>
+         <a-mixin
+         id="wallcolor"
+         color="lightsteelblue">
+        </a-mixin>
+        <a-box
+        mixin="wallcolor"
+        position="0 1.5 -16"
+        rotation="0 0 0"
+        width="10"
+        height="3"
+        depth="0.1">
+    </a-box>
+    <a-box
+    mixin="wallcolor"
+    position="-5 1.5 -11"
+    rotation="0 90 0"
+    width="10"
+    height="3"
+    depth="0.1">
+</a-box>
+<a-box
+mixin="wallcolor"
+position="5 1.5 -11"
+rotation="0 90 0"
+width="10"
+height="3"
+depth="0.1">
+</a-box>
+<a-box
+color="tan"
+position="0 0 -11"
+width="10"
+depth="10"
+height="0.1">
+</a-box>
+
+</a-box>
+<a-sphere
+color="orange"
+position="1 1 -8"
+radius="0.5">
+</a-sphere>
+<a-text
+value="Basketball Court!
+"color="black"
+position="3 5 -8"
+width="20"
+>
+<a-cylinder
+color="black"
+position="-1 -5 -5"
+rotation="0 0 0"
+radius="1"
+height="11">
+</a-cylinder>
+<a-plane
+color="white"
+position="0 0 -5"
+rotation="-8 -60 80"
+width="4"
+height="6">
+</a-plane>
+<a-cone
+color="white"
+position="-2.5 -1 -4.5"
+rotation="180 -60 0"
+radius-bottom="0.75"
+height="3">
+</a-cone>
+
+
+
+
+
+
+
+        </a-scene>
+    </body>
+    </html>
