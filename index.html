@@ -6,8 +6,11 @@
         "https://aframe.io/releases/1.8.0/aframe.min.js">
          </script>
          </head>
-         <body> 
-            <a-scene>
+         <body>
+          <a-scene>
+
+ 
+              
                  <a-plane 
                  color="forestgreen"
                   position="0 0 0" 
@@ -89,8 +92,53 @@ radius-bottom="0.75"
 radius-top="0.50"
 height="1.5">
 </a-cone>
-
-
+<a-mixin
+id="treetrunk"
+color="saddlebrown"
+geometry="radius:0.2; height:3">
+</a-mixin>
+<a-cylinder
+mixin="treetrunk"
+position="-12 -4 -7">
+</a-cylinder>
+<a-cylinder
+mixin="treetrunk"
+position="-10 -4 -1">
+</a-cylinder>
+<a-cylinder
+mixin="treetrunk"
+position="8 -4 -6">
+</a-cylinder>
+<a-cylinder
+mixin="treetrunk"
+position="4 -4 -2">
+</a-cylinder>
+<a-mixin
+id="conicaltreeleaves"
+color="green"
+geometry="radius-bottom:1; height:3">
+</a-mixin>
+<a-cone
+mixin="conicaltreeleaves"
+position="-12 -2 -7">
+</a-cone>
+<a-cone
+mixin="conicaltreeleaves"
+position="4 -2 -2">
+</a-cone>
+<a-mixin
+id="sphericaltreeleaves"
+color="green"
+geometry="radius:1">
+</a-mixin>
+<a-sphere
+mixin="sphericaltreeleaves"
+position="-10 -2 -1">
+</a-sphere>
+<a-sphere
+mixin="sphericaltreeleaves"
+position="8 -2 -6">
+</a-sphere>
 
 
 
