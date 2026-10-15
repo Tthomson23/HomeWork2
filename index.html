@@ -13,9 +13,15 @@
                     <img id="grass-base" src="assets\Grass_005_BaseColor.jpg">
                     <img id="grass-ambient-occlusion" src="assets\Grass_005_AmbientOcclusion.jpg">
                     <img id="grass-normal" src="assets\Grass_005_Normal.jpg">
-                    <img id="sphericaltreeleaves-ambient-occlusion" src="assets\Stylized_001_ambientOcclusion.jpg">
-                    <img id="sphericaltreeleaves-base" src="assets\Stylized_Leaves_001_basecolor.jpg">
-                    <img id="sphericaltreeleaves-normal" src="assets\Stylized_Leaves_001_normal.jpg">
+                    <img id="wood-ambient-occlusion" src="assets\Wood_Floor_009_ambientOcclusion.png">
+                    <img id="wood-base" src="assets\Wood_Floor_009_basecolor.png">
+                    <img id="wood-normal" src="assets\Wood_Floor_009_normal.png">
+                    <img id="metal-base" src="assets\Metal_Grill_026_basecolor.png">
+                    <img id="metal-ambient-occlusion" src="assets\Metal_Grill_026_ambientOcclusion.png">
+                    <img id="metal-normal" src="assets\Metal_Grill_026_normal.png">
+                    <img id="iron-base" src="assets\Metal_Base_Scratched_001_basecolor.png">
+                    <img id="iron-base" src="assets\Metal_Base_Scratched_001_normal.png">
+                    <img id="iron-base" src="assets\Metal_Base_Scratched_001_ambientOcclusion.png">
                     <img id="treetrunk-base" src="assets\Bark_005_baseColor.jpg">
                     <img id="treetrunk-ambient-occlusion" src="assets\Bark_005_ambientOcclusion.jpg">
                     <img id="treetrunk-normal" src="assets\Bark_005_normal.jpg">
@@ -153,7 +159,12 @@ height="3"
 depth="0.1">
 </a-box>
 <a-box
-color="tan"
+material= "src: #wood-base;
+                 repeat: 10 10;
+                  ambientOcclusionMap:#wood-ambient-occlusion;
+                   ambientOcclusionTextureRepeat: 10 10;
+                    normalMap: #wood-normal; 
+                    normalTextureRepeat: 10 10"
 position="0 0 -11"
 width="10"
 depth="10"
@@ -177,7 +188,12 @@ radius="1"
 height="10">
 </a-cylinder>
 <a-box
-color="white"
+material= "src: #iron-base;
+                 repeat: 10 10;
+                  ambientOcclusionMap:#wood-ambient-occlusion;
+                   ambientOcclusionTextureRepeat: 10 10;
+                    normalMap: #wood-normal; 
+                    normalTextureRepeat: 10 10"
 position="-1 1 -6"
 rotation="0 0 0"
 width="4"
@@ -185,7 +201,12 @@ height="2"
 depth="1">
 </a-box>
 <a-cone
-color="white"
+material= "src: #metal-base;
+                 repeat: 1 1;
+                  ambientOcclusionMap:#wood-ambient-occlusion;
+                   ambientOcclusionTextureRepeat: 1 1;
+                    normalMap: #wood-normal; 
+                    normalTextureRepeat: 1 1"
 position="-1 -1 -3.5"
 rotation="180 -60 0"
 radius-bottom="0.75"
