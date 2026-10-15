@@ -24,10 +24,57 @@
                     id="bench"
                     src="assets\bench.glb">
                 </a-asset-item>
+             <a-asset-item
+                    id="shoes"
+                    src="assets\shoes.glb">
+                </a-asset-item>
+              <a-asset-item
+                    id="ball"
+                    src="assets\ball.glb">
+                </a-asset-item>
+<a-asset-item
+                    id="light"
+                    src="assets\light.glb">
+                </a-asset-item>
+                <a-asset-item
+                    id="water"
+                    src="assets\water.glb">
+                </a-asset-item>
+
                 </a-assets>
- <a-entity
+                <a-entity
  gltf-model="#bench"
  position="-2 0 -12"
+ rotation="0 90 0"
+ scale="5 5 5">
+</a-entity>
+                <a-entity
+ gltf-model="#water"
+ position="-2 0 -4"
+ rotation="0 30 0"
+ scale=".25 .25 .25">
+</a-entity>
+                <a-entity
+ gltf-model="#light"
+ position="5 7 -4"
+ rotation="0 30 0"
+ scale=".35 .35 .35">
+</a-entity>
+                <a-entity
+ gltf-model="#ball"
+ position="1 1 -8"
+ rotation="0 30 0"
+ scale=".75 .75 .75">
+</a-entity>
+                <a-entity
+ gltf-model="#shoes"
+ position="-4 0 -4"
+ rotation="0 30 0"
+ scale="0.03 .03 .03">
+</a-entity>
+            <a-entity
+ gltf-model="#bench"
+ position="-4 0 -10"
  rotation="0 90 0"
  scale="5 5 5">
 </a-entity>
@@ -114,10 +161,7 @@ height="0.1">
 </a-box>
 
 </a-box>
-<a-sphere
-color="orange"
-position="1 1 -8"
-radius="0.5">
+
 </a-sphere>
 <a-text
 value="Basketball Court!
